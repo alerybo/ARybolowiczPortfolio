@@ -1,0 +1,91 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../../assets/header_bg_dark.png");
+}
+
+.header__container {
+  padding-top: 5rem;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header__img {
+  text-align: center;
+}
+
+.header__img img {
+  border-radius: 50%;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__content p {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.header__content h1 {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+  padding-bottom: 1rem;
+}
+
+/* ==================== CTA ==================== */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-start;
+}
+
+/* ==================== HEADER SOCIALS ==================== */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 0.8px;
+  height: 8rem;
+  background: var(--color-main);
+}
+
+/* ==================== SCROLL DOWN ==================== */
+.scroll__down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  letter-spacing: 2px;
+  transition: var(--transition);
+}
+
+.scroll__down:hover {
+  transform: translateY(1rem) translateX(-50%);
+}
+
+.scroll__down-icon {
+  font-size: 1.5rem;
+  color: var(--color-main);
+}

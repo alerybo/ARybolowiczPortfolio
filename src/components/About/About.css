@@ -1,0 +1,32 @@
+.about__container {
+    width: 60%;
+}
+
+.about__text {
+    margin-bottom: 5rem;
+    padding: 2rem;
+}
+
+.about__text p {
+    font-weight: var(--font-weight-light);
+    text-indent: 3rem;
+    line-height: 2rem;
+}
+
+.about__info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about__info {
+    display: flex;
+    align-items: center;
+}
+
+.about__info-icon {
+    color: var(--color-second);
+    font-size: 2rem;
+    margin: 1rem;
+}
+

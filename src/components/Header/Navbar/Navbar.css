@@ -1,0 +1,37 @@
+nav {
+    width: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    background: transparent;
+}
+
+.nav__logo{
+    font-size: 1.5rem;
+}
+
+.nav__links {
+    margin-left: auto;
+    display: flex;
+}
+
+.nav__link {
+    margin: 0 2rem;
+    font-weight:var(--font-weight-light);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__link:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.nav__toggle-icon {
+    font-size: 2rem;
+    margin: 0 2rem;
+}

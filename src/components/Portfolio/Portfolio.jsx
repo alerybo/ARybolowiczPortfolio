@@ -1,8 +1,8 @@
 import React from "react";
 import "./Portfolio.css";
 import { TbNorthStar } from "react-icons/tb";
-import SKECZBUK from '../../assets/portfolio_skeczbuk.png';
-import IVORY from '../../assets/portfolio_ivory.png';
+import SKECZBUK from "../../assets/portfolio_skeczbuk.png";
+import IVORY from "../../assets/portfolio_ivory.png";
 
 const data = [
   {
@@ -27,7 +27,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <div className="section__title">
-        <TbNorthStar className="section__title-icon" />
+        <span className="section__title-icon">✦</span>
         <p className="section__title-text">Portfolio</p>
         <p className="section__subtitle">My most recent projects</p>
       </div>
@@ -42,8 +42,14 @@ const Portfolio = () => {
               <article>
                 <p className="portfolio__card-title">{title}</p>
                 <p className="portfolio__card-subtitle">{subtitle}</p>
-                <a href={github} className="btn">GITHUB</a>
-                <a href={demo} className="btn btn-transparent">LIVE DEMO</a>
+                <div className="portfolio__card-buttons">
+                  <a href={github} className="btn" target='_blank'>
+                    GITHUB
+                  </a>
+                  <a href={demo} className="btn btn-transparent" target='_blank'>
+                    LIVE DEMO
+                  </a>
+                </div>
               </article>
             </div>
           );

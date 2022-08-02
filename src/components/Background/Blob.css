@@ -1,0 +1,22 @@
+.blob {
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  background-image: radial-gradient(circle, var(--color-second) 0%, var(--color-bg) 100%);
+  z-index: -1;
+  filter: blur(30px);
+  animation: move 35s infinite alternate-reverse;
+  opacity: 0.5;
+}
+
+@keyframes move {
+    from {
+        transform: translate(-100px, 900px) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+    to {
+        transform: translate(500px, 100px) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+}
+

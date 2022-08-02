@@ -3,7 +3,7 @@ header {
   padding-top: 7rem;
   overflow: hidden;
   position: relative;
-  background-image: url("../../assets/header_bg_dark.png");
+  /* background-image: url("../../assets/header_bg_dark.png"); */
 }
 
 .header__container {

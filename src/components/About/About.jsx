@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="section__title">
-        <TbNorthStar className="section__title-icon" />
+        <span className="section__title-icon">✦</span>
         <p className="section__title-text">About Me</p>
       </div>
 

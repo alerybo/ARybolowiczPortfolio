@@ -1,21 +1,42 @@
 .blob {
   position: absolute;
-  width: 700px;
-  height: 600px;
   background-image: radial-gradient(circle, var(--color-second) 0%, var(--color-bg) 100%);
   z-index: -1;
   filter: blur(30px);
-  animation: move 35s infinite alternate-reverse;
   opacity: 0.5;
 }
 
-@keyframes move {
+.blob1 {
+  width: 50vw;
+  height: 40vh;
+  animation: move-blob-1 35s infinite alternate-reverse;
+}
+.blob2 {
+  width: 40vw;
+  height: 50vh;
+  animation: move-blob-2 30s infinite alternate-reverse;
+}
+
+
+
+@keyframes move-blob-1 {
     from {
-        transform: translate(-100px, 900px) rotate(-90deg);
+        transform: translate(-10vw, 40vh) rotate(-90deg);
         border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
     }
     to {
-        transform: translate(500px, 100px) rotate(-10deg);
+        transform: translate(50vw, 10vh) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+}
+
+@keyframes move-blob-2 {
+    from {
+        transform: translate(-10vw, 50vh) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+    to {
+        transform: translate(40vw, 30vh) rotate(-10deg);
         border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
     }
 }

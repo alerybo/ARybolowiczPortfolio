@@ -1,7 +1,8 @@
 import React from "react";
 
 import About from "./components/About/About";
-import Blob from "./components/Background/Blob";
+import Blob1 from "./components/Background/Blob1";
+import Blob2 from "./components/Background/Blob2";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -12,7 +13,8 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Blob />
+      <Blob1 />
+      <Blob2 />
       <Header />
       <About />
       <Portfolio />

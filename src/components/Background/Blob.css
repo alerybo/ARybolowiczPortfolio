@@ -1,6 +1,10 @@
 .blob {
   position: absolute;
-  background-image: radial-gradient(circle, var(--color-second) 0%, var(--color-bg) 100%);
+  background-image: radial-gradient(
+    circle,
+    var(--color-second) 0%,
+    var(--color-bg) 100%
+  );
   z-index: -1;
   filter: blur(30px);
   opacity: 0.5;
@@ -17,27 +21,39 @@
   animation: move-blob-2 30s infinite alternate-reverse;
 }
 
-
-
 @keyframes move-blob-1 {
-    from {
-        transform: translate(-10vw, 40vh) rotate(-90deg);
-        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-    to {
-        transform: translate(50vw, 10vh) rotate(-10deg);
-        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
+  from {
+    transform: translate(-10vw, 40vh) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+  to {
+    transform: translate(50vw, 10vh) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
 }
 
 @keyframes move-blob-2 {
-    from {
-        transform: translate(-10vw, 50vh) rotate(-90deg);
-        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-    to {
-        transform: translate(40vw, 30vh) rotate(-10deg);
-        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
+  from {
+    transform: translate(-10vw, 50vh) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+  to {
+    transform: translate(40vw, 30vh) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
 }
 
+/* ==================== MEDIA QUERIES ==================== */
+/* ======== MEDIUM DEVICES ======== */
+@media screen and (max-width: 1200px) {
+  .blob {
+    display: none;
+  }
+}
+/* ======== SMALL DEVICES ======== */
+
+@media screen and (max-width: 600px) {
+  .blob {
+    display: none;
+  }
+}

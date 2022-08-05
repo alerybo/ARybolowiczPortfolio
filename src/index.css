@@ -27,6 +27,13 @@
   --font-weight-light: 200;
 }
 
+/* variables for light theme */
+.light-theme {
+  --color-bg: #cdc1c1;
+  --color-main: #2d2b29;
+  --color-second: #70544d;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -49,6 +56,22 @@ section {
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+/* ======== MEDIUM DEVICES ======== */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+/* ======== SMALL DEVICES ======== */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
 }
 
 a {

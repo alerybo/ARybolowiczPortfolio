@@ -69,4 +69,66 @@ textarea {
   background: var(--color-main);
   resize: none;
   color: var(--color-bg);
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+textarea:focus {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button {
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+/* ======== MEDIUM DEVICES ======== */
+@media screen and (max-width: 1200px) {
+  #contact {
+    height: max-content;
+  }
+
+  .contact__container {
+    width: 80%;
+    padding-bottom: 2rem;
+  }
+}
+
+/* ======== SMALL DEVICES ======== */
+
+@media screen and (max-width: 600px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 5%;
+  }
+
+  .contact__options {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact__option {
+    padding: 0.5rem;
+    width: 40%;
+  }
+
+  .contact__option h5 {
+    font-weight: 100;
+    font-size: 0.5rem;
+  }
+
+  form {
+    align-items: center;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+
 }

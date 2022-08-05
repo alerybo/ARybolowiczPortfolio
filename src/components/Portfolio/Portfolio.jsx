@@ -1,6 +1,5 @@
 import React from "react";
 import "./Portfolio.css";
-import { TbNorthStar } from "react-icons/tb";
 import SKECZBUK from "../../assets/portfolio_skeczbuk.png";
 import IVORY from "../../assets/portfolio_ivory.png";
 

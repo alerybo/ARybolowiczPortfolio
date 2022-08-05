@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import { TbNorthStar } from "react-icons/tb";
 import { ImLocation } from "react-icons/im";
 import { AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";

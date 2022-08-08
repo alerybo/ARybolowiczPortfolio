@@ -45,6 +45,11 @@ nav {
   cursor: pointer;
 }
 
+.nav__icon.icon__flipped {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .nav__icon-menu {
   margin-left: auto;
   visibility: hidden;

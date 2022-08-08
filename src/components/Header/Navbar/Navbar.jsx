@@ -7,6 +7,7 @@ const Navbar = () => {
   const [navbarActive, setNavbarActive] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [lightTheme, setLightTheme] = useState(true);
+  const [toggleButtonTheme, setToggleButtonTheme] = useState(false);
 
   //   Change navbar background color if page is scrolled < 80 px
   const changeNavbarBackground = () => {
@@ -26,6 +27,7 @@ const Navbar = () => {
   // Toggle light/dark mode
   const toggleTheme = () => {
     setLightTheme(!lightTheme);
+    setToggleButtonTheme(!toggleButtonTheme)
     document.body.classList[lightTheme ? "add" : "remove"]('light-theme');
   };
 
@@ -55,7 +57,7 @@ const Navbar = () => {
         className="nav__icon nav__icon-menu "
         onClick={mobileMenuToggle}
       />
-      <BsToggleOff className="nav__icon" onClick={toggleTheme} />
+      <BsToggleOff className={toggleButtonTheme ? "nav__icon icon__flipped" : "nav__icon"} onClick={toggleTheme} />
     </nav>
   );
 };

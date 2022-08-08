@@ -1,5 +1,13 @@
+.blob__container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+
 .blob {
-  position: absolute;
+  
   background-image: radial-gradient(
     circle,
     var(--color-second) 0%,
@@ -27,7 +35,7 @@
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
   }
   to {
-    transform: translate(50vw, 10vh) rotate(-10deg);
+    transform: translate(40vw, -10vh) rotate(-10deg);
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }

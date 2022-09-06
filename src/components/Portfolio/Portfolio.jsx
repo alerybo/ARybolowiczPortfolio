@@ -2,6 +2,7 @@ import React from "react";
 import "./Portfolio.css";
 import SKECZBUK from "../../assets/portfolio_skeczbuk.png";
 import IVORY from "../../assets/portfolio_ivory.png";
+import BOOKIE from "../../assets/portfolio_bookie.png";
 
 const data = [
   {
@@ -19,6 +20,14 @@ const data = [
     subtitle: "Fully responsive online clothing shop landing page mockup.",
     github: "https://github.com/alerybo/Ivory",
     demo: "https://ivoryclothing.netlify.app/",
+  },
+  {
+    id: 3,
+    img: BOOKIE,
+    title: "BOOKIE.",
+    subtitle: "React.js app made for book lovers",
+    github: "https://github.com/alerybo/bookie",
+    demo: "https://bookieapp.netlify.app/",
   },
 ];
 

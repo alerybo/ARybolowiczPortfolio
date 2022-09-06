@@ -1,4 +1,4 @@
-Responsive Portfolio Website built using React JS
+Responsive Portfolio Website built using React.js
 
 Live Project: https://arybolowicz.netlify.app/
 

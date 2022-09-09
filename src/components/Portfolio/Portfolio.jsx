@@ -21,14 +21,14 @@ const data = [
     github: "https://github.com/alerybo/Ivory",
     demo: "https://ivoryclothing.netlify.app/",
   },
-  {
-    id: 3,
-    img: BOOKIE,
-    title: "BOOKIE.",
-    subtitle: "React.js app made for book lovers",
-    github: "https://github.com/alerybo/bookie",
-    demo: "https://bookieapp.netlify.app/",
-  },
+  // {
+  //   id: 3,
+  //   img: BOOKIE,
+  //   title: "BOOKIE.",
+  //   subtitle: "React.js app made for book lovers",
+  //   github: "https://github.com/alerybo/bookie",
+  //   demo: "https://bookieapp.netlify.app/",
+  // },
 ];
 
 const Portfolio = () => {

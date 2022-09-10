@@ -21,14 +21,14 @@ const data = [
     github: "https://github.com/alerybo/Ivory",
     demo: "https://ivoryclothing.netlify.app/",
   },
-  // {
-  //   id: 3,
-  //   img: BOOKIE,
-  //   title: "BOOKIE.",
-  //   subtitle: "React.js app made for book lovers",
-  //   github: "https://github.com/alerybo/bookie",
-  //   demo: "https://bookieapp.netlify.app/",
-  // },
+  {
+    id: 3,
+    img: BOOKIE,
+    title: "Bookie.",
+    subtitle: "React.js app for book lovers",
+    github: "https://github.com/alerybo/bookie",
+    demo: "https://bookieapp.netlify.app/",
+  },
 ];
 
 const Portfolio = () => {
@@ -51,10 +51,14 @@ const Portfolio = () => {
                 <p className="portfolio__card-title">{title}</p>
                 <p className="portfolio__card-subtitle">{subtitle}</p>
                 <div className="portfolio__card-buttons">
-                  <a href={github} className="btn" target='_blank'>
+                  <a href={github} className="btn" target="_blank">
                     GITHUB
                   </a>
-                  <a href={demo} className="btn btn-transparent" target='_blank'>
+                  <a
+                    href={demo}
+                    className="btn btn-transparent"
+                    target="_blank"
+                  >
                     LIVE DEMO
                   </a>
                 </div>

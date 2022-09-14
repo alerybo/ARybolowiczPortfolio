@@ -3,6 +3,7 @@ import "./Portfolio.css";
 import SKECZBUK from "../../assets/portfolio_skeczbuk.png";
 import IVORY from "../../assets/portfolio_ivory.png";
 import BOOKIE from "../../assets/portfolio_bookie.png";
+import QUIZ from "../../assets/portfolio_quizapp.png";
 
 const data = [
   {
@@ -21,14 +22,14 @@ const data = [
     github: "https://github.com/alerybo/Ivory",
     demo: "https://ivoryclothing.netlify.app/",
   },
-  // {
-  //   id: 3,
-  //   img: BOOKIE,
-  //   title: "Bookie.",
-  //   subtitle: "React.js app for book lovers",
-  //   github: "https://github.com/alerybo/bookie",
-  //   demo: "https://bookieapp.netlify.app/",
-  // },
+  {
+    id: 3,
+    img: QUIZ,
+    title: "Quiz App",
+    subtitle: "React.js and Typescript project",
+    github: "https://github.com/alerybo/quiz-app",
+    demo: "https://ar-trivia-app.netlify.app/",
+  },
 ];
 
 const Portfolio = () => {

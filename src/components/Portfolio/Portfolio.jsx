@@ -2,17 +2,26 @@ import React from "react";
 import "./Portfolio.css";
 import SKECZBUK from "../../assets/portfolio_skeczbuk.png";
 import IVORY from "../../assets/portfolio_ivory.png";
-import BOOKIE from "../../assets/portfolio_bookie.png";
+// import BOOKIE from "../../assets/portfolio_bookie.png";
 import QUIZ from "../../assets/portfolio_quizapp.png";
+import BLEND from "../../assets/portfolio-blend-game.png";
 
 const data = [
   {
-    id: 1,
-    img: SKECZBUK,
-    title: "SKECZBUK",
-    subtitle: "My Illustration Portfolio",
-    github: "https://github.com/alerybo/skeczbuk",
-    demo: "https://skeczbuk.netlify.app/",
+    id: 4,
+    img: BLEND,
+    title: "Blend Game",
+    subtitle: "Next.js color puzzle game",
+    github: "https://github.com/alerybo/blend-game",
+    demo: "https://blend-game.vercel.app/",
+  },
+  {
+    id: 3,
+    img: QUIZ,
+    title: "Quiz App",
+    subtitle: "React.js and Typescript project",
+    github: "https://github.com/alerybo/quiz-app",
+    demo: "https://ar-trivia-app.netlify.app/",
   },
   {
     id: 2,
@@ -23,12 +32,12 @@ const data = [
     demo: "https://ivoryclothing.netlify.app/",
   },
   {
-    id: 3,
-    img: QUIZ,
-    title: "Quiz App",
-    subtitle: "React.js and Typescript project",
-    github: "https://github.com/alerybo/quiz-app",
-    demo: "https://ar-trivia-app.netlify.app/",
+    id: 1,
+    img: SKECZBUK,
+    title: "SKECZBUK",
+    subtitle: "My Illustration Portfolio",
+    github: "https://github.com/alerybo/skeczbuk",
+    demo: "https://skeczbuk.netlify.app/",
   },
 ];
 
